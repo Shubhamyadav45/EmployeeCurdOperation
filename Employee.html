@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="Employee.css">
+</head>
+<body>
+    <section class="img">
+
+    </section>
+    <section class="AddEmp">
+        <div class="formContainer">
+            <h1 class="emplyeeHeader">Register Employee</h1>
+            <form action="">
+               <ul>
+                <li> <label for=""><b>Id:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="id" id="EmpId" placeholder="Enter Id" value="" required />
+                    <p id="emptyMessage" style="display: none;"></p>
+                </li>
+                <li> <label for=""><b>Name:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="name" id="empName" placeholder="Enter Name" required/>
+                    <p id="emptyNameMessage" style="display: none;"></p>
+
+                </li>
+                <li> <label for=""><b>Age:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="age" id="empAge" min="19" max="65" placeholder="Enter Age" required/>
+                    <p id="empAgeMessage" style="display: none;"></p>
+
+                </li>
+                <li> <label for=""><b>Contact_no:</b></label>&nbsp;&nbsp;
+                    <input type="number" name="contact_no" id="empContact" placeholder="Enter Contact-no" value="" required />
+                    <p id="emptyContactMessage" style="display: none;"></p>
+
+                </li>
+                <li> <label for=""><b>Gender:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="gender" id="empGender" style="padding:8px" >  
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <p id="emptyGenderMessage" style="display: none;"></p>
+                    </select>
+                </li>
+                <li>    <button class="AddButton" type="button" onclick="Add()"> Add</button>
+                </li>
+               </ul>
+            </form>
+        </div>
+    </section>
+    <section class="ReadTableEmp">
+        <div id="cardUpdateForm">
+            <h1 class="emplyeeHeader">Update Details</h1>
+            <form action="">
+                <ul>
+                    <li><b>Id:</b><input type="number" placeholder="Enter Id " id="updateId">
+                        <p id="emptyIDMessage" style="display: none;"></p>
+                    </li>
+                    <li><b>Name:</b><input type="text" placeholder="Enter Name " id="updateName">
+                        <p id="emptyNameUMessage" style="display: none;"></p>
+
+                    </li>
+                    <li><b>Age:</b><input type="number" placeholder="Enter Age " id="updateAge">
+                        <p id="emptyAgeUMessage" style="display: none;"></p>
+                    </li>               
+                    <li><b>Gender:</b><select name="gender" id="updateGender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <p id="emptyGenderUMessage" style="display: none;"></p>
+
+                </li>
+                    <li><b>Contact:</b><input type="number" placeholder="Enter Contact " id="updateContact">
+                        <p id="emptyContactUMessage" style="display: none;"></p>
+                    </li>
+                    <li class="updatebtn"><button type="button" id="saveUpdate" >Save</button> <button type="button" id="cancelButton" onclick="cancel()" >cancel</button></li>
+                </ul>
+            </form>
+
+        </div>
+        <h1 class="emplyeeHeader" id="empdetails" style="width: 1040px; margin-left: 10px;">Employee Details</h1>
+        <table  border="2px" >
+            <tr>
+                <th >ID</th>
+                <th >Name</th>
+                <th >Age</th>
+                <th >Contact</th>
+                <th >Gender</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="read_table">
+                <!-- <tr>
+                    <td>234</td>
+                    <td>shubham</td>
+                    <td>Male</td>
+                    <td>34</td>
+                    <td>8993384883</td>
+                    <td><button type="button" id="uptButton"   style="margin:10px; padding:10px; cursor:pointer; background-color:green; font-size:18px; border-radius:10px;">Update</button><button  style="margin:10px; background-color:orange; padding:10px; font-weight:bold; cursor:pointer; font-size:18px; border-radius:10px;" type="button"  onclick="del(this)">Delete</button> </td>
+                    </tr> -->
+
+            </tbody>
+        </table>
+        <dialog  id="dialog"> Are you sure! You want to delete <br>
+            <button type="button" id="cnfrm" >confirm</button>
+            <button type="button" onclick="ccancel()">cancel</button>
+        </dialog>
+        
+
+    </section>
+    <script src="Employee.js"></script>
+</body>
+</html>

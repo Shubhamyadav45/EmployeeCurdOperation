@@ -1,0 +1,205 @@
+.AddEmp{
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 3%;
+    left: 15%;
+    margin-left: 90px;
+    margin-top: 100px;
+    height: 600px;
+    width: 600px;
+    border: 2px solid whitesmoke;
+    border-radius: 5% ;
+    border: 3px solid  rgb(9, 86, 86);
+}
+label{
+    font-size: 25px;
+}
+.img{
+    background-image: url(./png.png);
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 375px;
+    height: 600px;
+    width: 600px;
+    opacity: 0.5;
+}
+body{
+}
+.formContainer{
+    /* border: 2px solid green; */
+    width: auto;
+    height: auto;
+    /* margin: 10px; */
+    border-radius: 30px;
+}
+
+.formContainer form ul li, .cardUpdateForm form ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    /* border: 2px solid yellow; */
+}
+
+ form ul li input[type="text"],input[type="number"]{
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+.formContainer form ul li select{
+    width: 40%;
+    padding: 10px;
+    font-size: 18px;
+
+}
+input[type="number"]{
+    width:45%;
+}
+input[type="text"]{
+    width: 45%;
+}
+
+.AddButton{
+    float: right;
+    padding: 13px;
+    width: 120px;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 250px;
+    margin-bottom: 80px;
+    background-color:rgb(5, 38, 81) ;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+/* rgb(5, 38, 81) */
+.ReadTableEmp{
+    position: absolute;
+    margin-top: 100px;   
+    border-radius: 10px;
+    width:90;
+    top: 80%;
+    left: 6%;
+}
+.ReadTableEmp table{
+    width: auto;
+    margin-left:10px;
+    /* table-layout: fixed; */
+}
+ table  th,td{
+    border-collapse: collapse;
+    padding: 10px 40px;
+    font-size: 25px;
+
+}
+table th{
+}
+table{
+}
+table tr{
+}
+table tr:hover{
+    background-color: #EEE;
+}
+#cardUpdateForm{
+    position: absolute;
+    background-color: whitesmoke;
+    position: absolute;
+    top: -150%;
+    left: 100%;
+    width: 500px;
+    height: 700px;
+    margin: 20px auto;
+    visibility: hidden; 
+    border-radius: 20px;
+    border: 2px solid rgb(9, 86, 86);
+ 
+}
+#cardUpdateForm form ul li{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+#cardUpdateForm form ul li p{
+    margin-top: 0px;
+
+
+}
+#cardUpdateForm form ul li p:nth-child(1){
+}
+#cardUpdateForm form ul li input[type="text"]{
+    width: 70%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+}
+#cardUpdateForm form ul li select{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+#cardUpdateForm form ul li input[type="number"]{
+    width: 70%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+.updatebtn{
+    padding: 20px 10px;
+}
+.updatebtn button{
+    background-color: orchid;
+    margin: auto;
+    width: 40%;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+.updatebtn button:nth-child(2){
+    background-color: mediumslateblue;
+    margin-top: 12px;
+}
+
+dialog{
+    width: 275px;
+    height: 130px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+dialog button{
+    bottom: 2px;
+    margin-top: 40px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;    
+    font-weight: bold;
+    outline: none;
+    background-color: red;
+    margin-left: 16px;
+}
+dialog button:nth-child(2){
+    background-color: chocolate;
+
+}
+.emplyeeHeader{
+    text-align: center;
+    opacity: 0.6;
+    background-color: rgb(5, 38, 81);
+    margin: 0px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
